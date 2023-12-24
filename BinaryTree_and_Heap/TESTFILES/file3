@@ -1,0 +1,5 @@
+This course will introduce you to the basic concepts underlying all computer systems and prepare you for in-depth study in any area of computer science. This is the first course on computer organization and computer systems. It provides broad coverage of processor operation and the aspects of system software such as compilers, linkers, and operating systems that are important from the programmer's perspective. It also introduces you to the organization of basic components in modern computers such as processors, hierarchical memory systems, and includes basic concepts in logic circuit design.
+
+Why do you need this course if you have already taken the introductory programming sequence? Oversimplifying matters somewhat, CSCI 1113/1133 is based on a simplified model of program execution, and CSCI 1913/1933 builds further layers of abstraction. CSCI 2021 looks "under the hood", and introduces greater detail about system behavior and operation.
+
+
