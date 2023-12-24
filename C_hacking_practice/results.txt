@@ -1,0 +1,60 @@
+James Sargsyan; sargs005
+
+Dylan Nieminski; niemi170
+
+
+
+Part 1: csel-kh1250-06  April 13th
+
+	Explain your results (2-3 sentences): 
+	The correlation between the 0s and 1s in known_secret is that 1s represent a cache hit and the
+	0s represent a cache miss causing the timing to be longer in the 0s than the 1s. The 1s threshold is 
+	150. So if the delta value is above or below that it will result into the corresponding 0 or 1.
+
+	Calculated threshold: 150
+
+
+Part 2: 
+	
+	"niemi170"
+	
+	Secret Array: {0, 1, 1, 1, 1, 0, 0, 1}
+
+
+Part 3:
+
+	Computer 1: csel-kh1262-01.cselabs.umn.edu
+	Calculated threshold: 500
+	Secret Array: {0, 1, 1, 1, 1, 0, 0, 1}
+	Comment: Very inconsistant. When ran, it was about a 50% rate of hitting the desired secret array
+
+	Computer 2: csel-wb28-01.cselabs.umn.edu
+	Calculated threshold: 150
+	Secret Array: {0, 1, 1, 1, 1, 0, 0, 1}
+	Comment: A bit more consistant than the other machines, the first cache hit was giving us a 1 
+	instead of a zero
+
+
+	CSE Server: csel-kh1262-02.cselabs.umn.edu
+	Calculated threshold: 150
+	Secret Array: {0, 1, 1, 1, 1, 0, 0, 1}
+	Comment: Very consistant and fast low amount of errors in timings (had to use keller twice becuase
+	ssh would time out in any other building except keller and walter)
+
+
+	VOLE: 
+	Calculated threshold: 1450
+	Secret Array: {1, 1, 1, 1, 1, 0, 0, 1}
+	Comment: Vole seems to have a really high threshold I assume becuase of the amount of people
+	one VOLE at once causing the timings to be longer, I also noticed that the first 1 in the secret
+	always took really long, in this case it was somewhere inbetween 6000-12000
+
+
+	Why were the times different/similar?
+	Timing for the most part were very differnt except for keller 262 computer 02 and walter b28 computer 01. We think this is because the amount of people remotely
+	connecting to the machines causes the differences in timings, explaining why VOLE was the most being the most popular virtual machine. All around
+	this project was very interesting to see the differences between the timing of cache hits and misses and depending on the computer hardware,
+	how fast the data is accessed and hardware used.
+
+
+		
